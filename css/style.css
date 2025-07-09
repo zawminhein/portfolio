@@ -1,0 +1,52 @@
+body {
+   font-family: Arial,  sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(216, 230, 245);
+}
+
+.container {
+   max-width: 1200px;
+   margin: auto;
+}
+
+.progress-bar {
+  transition: width 1.5s ease;
+}
+
+.carousel-custom-size {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.carousel-custom-size .carousel-inner,
+.carousel-custom-size .carousel-item,
+.carousel-custom-size img {
+  max-height: 680px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.6);   /* darker background */
+  background-size: 70% 70%;            /* slightly larger icon */
+  border-radius: 50%;                  /* optional: make it round */
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--bs-secondary) !important;
+  /* Optional: make them more visible */
+  opacity: 1;
+}
+
+/* Social icon hover effect */
+.social-icons a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--bs-primary) !important; /* Bootstrap primary color */
+  transform: scale(1.2);
+}
