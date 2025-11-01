@@ -50,3 +50,67 @@ body {
   color: var(--bs-primary) !important; /* Bootstrap primary color */
   transform: scale(1.2);
 }
+
+/* Uniform Carousel Image Sizes */
+.carousel-inner img {
+  width: 100%;
+  height: 720px;              /* fixed uniform height */
+  object-fit: cover;          /* ensures all fill the area nicely */
+  border-radius: 8px;         /* optional for smooth rounded corners */
+}
+
+/* Make it smaller on mobile */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 250px;
+  }
+}
+
+.contact-card {
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0d6efd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  font-size: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.contact-icon:hover {
+  background-color: #0b5ed7;
+}
+
+.contact-link a {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-link a i {
+  color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    text-align: center;
+  }
+}
